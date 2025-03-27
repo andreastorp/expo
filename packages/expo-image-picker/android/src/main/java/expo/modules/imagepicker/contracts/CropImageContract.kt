@@ -41,10 +41,9 @@ internal class CropImageContract(
           this.customOutputUri = outputUri
 
           input.options.aspect?.let { (x, y) ->
-            aspectRatioX = x
-            aspectRatioY = y
-            fixAspectRatio = true
-            initialCropWindowPaddingRatio = 0f
+            aspectRatioX = 1
+            aspectRatioY = 1
+            fixAspectRatio = false
           }
         }
       )
